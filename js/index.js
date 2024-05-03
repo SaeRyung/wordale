@@ -45,7 +45,8 @@ function appStart() {
       else block.style.background = "#787C7E"; //틀란 알파벳은 회색
       //console.log("입력한글자:", 입력한_글자, "정답글자:", 정답_글자);
     }
-    nextLine(); //함수호출하여 다음 줄로 넘어가기
+    if (맞은갯수 === 5) gameover();
+    else nextLine(); //함수호출하여 다음 줄로 넘어가기
   };
 
   //지우기
